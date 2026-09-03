@@ -1,0 +1,92 @@
+@import "../../../../assets/sass/variables";
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.project {
+    overflow-x: hidden !important;
+}
+
+.btn-dir {
+    right: 40px;
+    position: absolute;
+}
+
+.projects-name>img {
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+/* projects */
+.project-img:hover {
+    background-color: #3D2582;
+    border-radius: 20px;
+}
+
+.project-img {
+    transition: 1s;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.project-img:hover img {
+    transform: scale(1.1, 1.1);
+    transition-duration: 1s;
+    transition: 1s;
+}
+
+.caption {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition: top 1s;
+}
+
+.project-img:hover .caption {
+    top: 0px;
+    transition-duration: 1s;
+    background-color: rgba(61, 37, 130, .9);
+    cursor: pointer;
+}
+
+.project-name {
+    font-size: 22px;
+}
+
+.commonClass {
+    border: solid 1px #fff;
+    border-radius: 30px;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+
+.technologies {
+    background-color: rgba(103, 79, 157, .9);
+    @extend .commonClass;
+}
+
+.view {
+    position: absolute;
+    bottom: 5px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    @extend .commonClass;
+}
+
+.eye {
+    width: 16px !important;
+}
+
+p {
+    margin: 4px !important;
+    padding: 4px !important;
+}

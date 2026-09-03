@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import "./assets/sass/variables";
+
+* {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+}
+
+.address {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.second-address {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.projects {
+    color: $secondColor;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 23px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    border: solid 1px $mainColor;
+    color: $mainColor;
+    transition: opacity .15s ease;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+}
